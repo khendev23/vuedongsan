@@ -1,12 +1,20 @@
 <template>
   <div class="discount">
-    <h4>지금 결제시 20% 할인!</h4>
+    <h4>지금 결제시 {{discountNum}}% 할인!</h4>
   </div>
 </template>
 
 <script>
 export default {
   name : 'DiscountComponent',
+  data(){
+    return {
+      
+    }
+  },
+  props : {
+    discountNum : Number
+  }
 }
 </script>
 
